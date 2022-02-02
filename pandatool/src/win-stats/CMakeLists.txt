@@ -4,9 +4,10 @@ endif()
 
 set(WINSTATS_HEADERS
   winStatsChartMenu.h
+  winStatsFlameGraph.h
   winStatsGraph.h
   winStats.h
-  winStatsLabel.h
+  winStatsLabel.h winStatsLabel.I
   winStatsLabelStack.h
   winStatsMenuId.h
   winStatsMonitor.h winStatsMonitor.I
@@ -18,6 +19,7 @@ set(WINSTATS_HEADERS
 set(WINSTATS_SOURCES
   winStatsChartMenu.cxx
   winStats.cxx
+  winStatsFlameGraph.cxx
   winStatsGraph.cxx
   winStatsLabel.cxx
   winStatsLabelStack.cxx

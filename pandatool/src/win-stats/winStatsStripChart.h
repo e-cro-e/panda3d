@@ -43,7 +43,7 @@ public:
 
   virtual void set_time_units(int unit_mask);
   virtual void set_scroll_speed(double scroll_speed);
-  virtual void clicked_label(int collector_index);
+  virtual void on_click_label(int collector_index);
   void set_vertical_scale(double value_height);
 
 protected:
@@ -79,7 +79,6 @@ private:
   std::string _net_value_text;
 
   HWND _smooth_check_box;
-  static size_t _check_box_height, _check_box_width;
 
   static bool _window_class_registered;
   static const char * const _window_class_name;
